@@ -5,20 +5,29 @@ const rl = readline.createInterface({ //Interface de leitura que permite a entra
 	output: process.stdout,
 });
 
-function calcular(n1: number, n2: number, operacao: string) {
+function calcular(n1: number, n2: number, operacao: number) {
 	let resultado: number;
 
-	switch (operacao.toLowerCase()) {
-		case "adição":
+	switch (operacao) { //Escolha das operações a partir da escolha do usuário
+		case 1:
 			resultado = n1 + n2;
+
+			console.log(`O resultado da adição é: ${resultado}`);
+
 			break;
-		case "subtração":
+		case 2:
 			resultado = n1 - n2;
+
+			console.log(`O resultado da subtração é: ${resultado}`);
+
 			break;
-		case "multiplicação":
+		case 3:
 			resultado = n1 * n2;
+
+			console.log(`O resultado da multiplicação é: ${resultado}`);
+
 			break;
-		case "divisão":
+		case 4:
                if (n2 === 0) {
                     console.log("Não existe divisão por zero!");
 
@@ -27,6 +36,8 @@ function calcular(n1: number, n2: number, operacao: string) {
                     return;
                }
                resultado = n1 / n2;
+
+			console.log(`O resultado da divisão é: ${resultado}`);
 
                break;
 		default:
@@ -37,8 +48,6 @@ function calcular(n1: number, n2: number, operacao: string) {
 			return;
 	}
 
-	console.log(`O resultado da ${operacao} é: ${resultado}`);
-
 	rl.close(); //Encerra o processo, após o segundo número ser processado e o resultado ser exibido
 }
 
@@ -48,8 +57,10 @@ rl.question('Digite o primeiro número: ', (primeiroNumero) => { //Exibe a pergu
 	rl.question('Digite o segundo número: ', (segundoNumero) => { //Exibe a pergunta pro usuário que recebe ela como segundoNumero e converte para float
 		const numero2 = parseFloat(segundoNumero);
 
-		rl.question('Digite a operação que deseja calcular: ', (operacao) => {
-			calcular(numero1, numero2, operacao);
+		rl.question('Digite a operação que deseja calcular (1 - Adição ; 2 - Subtração ; 3 - Multiplicação ; 4 - Divisão): ', (operacao) => {
+			const operacaoFloat = parseFloat(operacao);
+
+			calcular(numero1, numero2, operacaoFloat);
 		});
 	});
 });
