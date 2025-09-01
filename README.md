@@ -1,34 +1,50 @@
-# Typedora
+# 🔢 Typedora 🔢
 
-Neste projeto, foi realizado duas calculadoras: uma que realiza apenas a adição e outra que realiza todas as 4 operações principais. As calculadoras foram feitas em TypeScript.
+#### A Typedora é um projeto que foi realizado duas calculadoras: Uma que realiza apenas a adição e outra que realiza todas as 4 operações principais. As calculadoras foram feitas em TypeScript.
 
-# Como usar as calculadoras
+# ➗ Como usar as calculadoras ➗
 
-1. Baixe o projeto clicando em Code e indo em Download ZIP;
+1. Clique no botão Code e copia a URL do projeto:
 
-2. Após baixar o arquivo ZIP, extraia a pasta do projeto na área de trabalho ou em documentos;
+```bash
+https://github.com/LucasBoaratti/Typedora.git
+```
 
-3. Abra o VSCode e faça o seguinte atalho: CTRL + K, CTRL O, e escolha a pasta do projeto;
+2. Abra o Prompt de comando (ou PowerShell ou GitBash) em sua área de trabalho ou em documentos e realize o seguinte comando:
 
-4. Após abrir o projeto, você terá duas escolhas: usar a calculadora de adição ou usar a calculadora com as 4 operações;
+OBS: Certifique que o Git está instalado no seu computador. Caso não esteja, instale aqui: [Git](https://git-scm.com/downloads)
 
-5. Caso queira usar apenas a calculadora de adição, abra o terminal e cole esse comando:
+```bash 
+git clone https://github.com/LucasBoaratti/Typedora.git
+```
+
+3. Acesse a pasta do projeto:
+
+```bash
+cd .\Typedora
+```
+
+4. Agora, entre no VSCode:
+
+```bash
+code .
+```
+
+5. Após abrir o projeto, você terá duas escolhas: usar a calculadora de adição ou usar a calculadora com as 4 operações, caso queira usar a calculadora com a adição, digite esse comando no terminal (Obs: para abrir o terminal, realize o atalho CTRL + J ou CTRL + '):
 
 ```bash
 node .\dist\Calculadora.js
 ```
 
-Agora é só realizar suas adições :)
-
-6. Mas caso você queira usar a calculadora completa, abra o terminal e cole esse comando:
+6. Se quiser usar a calculadora completa, digite esse comando no terminal:
 
 ```bash
 node .\dist\CalculadoraCompleta.js
 ```
 
-E pronto! Agora é só utilizar sua calculadora completa! :D
+#### E pronto! Agora você pode realizar as suas operações, utilizando qualquer uma das calculadoras :D
 
-# Linguagens 
+# ✖️ Linguagens/tecnologias utilizadas ✖️
 
 ## FrontEnd
 
@@ -36,5 +52,3 @@ E pronto! Agora é só utilizar sua calculadora completa! :D
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" width="70px" height="70px"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="70px" height="70px"/>
 </div>
-
-Obs: O JavaScript foi utilizado apenas para a compilação do TypeScript, além para rodar o código :)
